@@ -3,32 +3,25 @@ docker-awslogs
 
 ``awslogs`` is a simple command line tool for querying groups, streams and events from [Amazon CloudWatch](http://aws.amazon.com/cloudwatch/) logs. Please see full features in the [awslogs](https://github.com/jorgebastida/awslogs).
 
-This repository builds `awslogs` container image. You can get the image by `docker pull xueshanf/awslogs`.  
+This repository builds `awslogs` container image. You can get the image by `docker pull xueshanf/awslogs`.
 To build your own:
 
 ```console
 $ docker build -t awslogs .
 ...
 ```
-The changes to this repo triggers auto-build and push images to dockerhub.com/u/xueshanf/awslogs.
 
 Examples
 ========
 
-Assuming the image name you built is `awslogs`.
+Let's assume you have setup AWS cloudwatch, your AWS credentials is configured in $HOME/.aws/credentials file, the image name you built is `awslogs`.
 
 - Get help
 
 ```console
 $ docker run --rm -it -v $HOME/.aws:/root/.aws awslogs -h
 usage: awslogs [ get | groups | streams ]
-
-positional arguments:
-  {get,groups,streams}
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --version             show program's version number and exit
+...
 ```
 
 -  Check version

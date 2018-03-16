@@ -1,16 +1,18 @@
-docker-awslogs
+Docker-awslogs
 ==============
 
-[awslogs](https://github.com/jorgebastida/awslogs) in container.
+``awslogs`` is a simple command line tool for querying groups, streams and events from `Amazon CloudWatch <http://aws.amazon.com/cloudwatch/>`_ logs. Please see full features in the [awslogs](https://github.com/jorgebastida/awslogs).
 
-This repo triggers auto-build and push images to dockerhub.com/u/xueshanf/awslogs
+This repository builds `awslogs` container image so you can run it in a docker container.
 
-To build the image
+The changes to this repo triggers auto-build and push images to dockerhub.com/u/xueshanf/awslogs.  If you want to build your own:
 
 ```console
 $ docker build -t myawslogs .
 ...
 ```
+The changes to this repo triggers auto-build and push images to dockerhub.com/u/xueshanf/awslogs.
+
 Examples
 ========
 

@@ -1,4 +1,5 @@
-FROM python:alpine3.7
+FROM python:3.7.8-alpine3.12
+
 LABEL Xueshan Feng <xueshan.feng@gmail.com>
 
 RUN pip install virtualenv \
